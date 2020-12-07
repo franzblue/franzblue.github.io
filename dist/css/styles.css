@@ -2827,12 +2827,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #e902e9;
+  background-color: #bd15ff;
+  border-color: #550275;
 }
 .btn-outline-light:hover {
   color: #212529;
-  background-color: #f8f9fa;
+  background-color: #bd15ff;
   border-color: #f8f9fa;
 }
 .btn-outline-light:focus, .btn-outline-light.focus {
