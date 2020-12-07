@@ -9741,6 +9741,7 @@ button.bg-dark:focus {
 
 .text-uppercase {
   text-transform: uppercase !important;
+  color: #a269b9;
 }
 
 .text-capitalize {
@@ -9984,6 +9985,7 @@ h3 {
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
+  color: #a269b9;
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
@@ -10003,7 +10005,7 @@ h3 {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: #2c3e50;
+  background-color: #a269b9;
   border-radius: 1rem;
   border-color: #2c3e50 !important;
 }
@@ -10018,10 +10020,10 @@ h3 {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: #a269b9;
 }
 .divider-custom.divider-light .divider-custom-icon {
-  color: #fff !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .btn-xl {
@@ -10118,12 +10120,18 @@ h3 {
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
+  color: #a269b9;
+  /* border: 4px #d268fb double; */
+  /* box-shadow: 5px 10px 8px black; */
+  /* background-color: #0f6674; */
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
+  color: #a269b9;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 20rem;
+  border-radius: 50%;
 }
 
 @media (min-width: 992px) {
@@ -10238,4 +10246,10 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #1a252f;
+}
+
+.wizard_box {
+  border: 4px #a269b9 solid;
+  border-radius: 50%;
+  background-color: #0f6674;
 }
