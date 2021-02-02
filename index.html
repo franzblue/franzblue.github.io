@@ -169,7 +169,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate" onSubmit={contactMe}>
+                        <form id="contactForm" name="sentMessage" onsubmit="contactMe()" novalidate="novalidate">
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Name</label>
@@ -484,6 +484,15 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Email-->
         
-        <script src="/src/js/contactMe.js"></script>
+        <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">function contactMe() {
+            event.preventDefault();
+            emailjs.sendForm('service_portfolio', 'portfolio_contact', event.target, 'user_dUDNp4m09uGQMhOjbo2ZP')
+              .then((result) => {
+                  console.log(result.text);
+              }, (error) => {
+                  console.log(error.text);
+              });
+          }</script>
     </body>
 </html>
