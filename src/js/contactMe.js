@@ -1,4 +1,4 @@
-import emailjs from 'emailjs-com';
+
 
   export default function contactMe(e) {
     e.preventDefault();
