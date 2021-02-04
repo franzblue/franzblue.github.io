@@ -55,9 +55,7 @@ $(function () {
                         .append("</button>");
                     $("#success > .alert-success").append(
                         $("<strong>").text(
-                            "Thank you for reaching out " +
-                                firstName +
-                                "! I vow to respond as fast as humanly possible."
+                            `Thank you for reaching out ${firstName}! I vow to respond as fast as humanly possible.`
                         )
                     );
                     $("#success > .alert-success").append("</div>");
